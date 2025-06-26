@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Katik - Kalkulator Segitiga</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Welcome to Katik</h1>
+      <p>
+        Hello, Welcome to Katik
+        <br />
+        Sebuah web app sederhana yang berfungsi untuk menghitung nilai luas dan
+        keliling Segitiga
+      </p>
+      <button
+        class="btnLuas"
+        onclick="document.getElementById('luas').scrollIntoView()"
+      >
+        Luas Segitiga
+      </button>
+      <button
+        class="btnKeliling"
+        onclick="document.getElementById('keliling').scrollIntoView()"
+      >
+        Keliling Segitiga
+      </button>
+
+      <!-- Luas Segitiga -->
+      <section id="luas">
+        <h2>Luas Segitiga</h2>
+        <img src="Luas Segitiga.jpg" alt="Triangle Diagram" />
+        <p>Rumus Luas Segitiga yaitu:<br /><strong>L = 1/2 x a x t</strong></p>
+        <p>Di mana:<br />L = Luas<br />a = Panjang Alas<br />t = Tinggi</p>
+
+        <h2>Hitung Luas Segitiga</h2>
+        <input type="number" id="alas" placeholder="Nilai Alas" />
+        <input type="number" id="tinggi" placeholder="Nilai Tinggi" />
+        <div id="luasHasil"></div>
+        <button onclick="hitungLuas()">Hitung</button>
+        <button onclick="resetLuas()">Reset</button>
+      </section>
+
+      <!-- Keliling Segitiga -->
+      <section id="keliling">
+        <h2>Keliling Segitiga</h2>
+        <img src="Keliling Segitiga.jpg" alt="Triangle Diagram" />
+        <p>
+          Rumus Keliling Segitiga yaitu:<br /><strong>K = S1 + S2 + S3</strong>
+        </p>
+        <p>
+          Di mana:
+          <br />
+          K = Keliling
+          <br />
+          S1 = Sisi A
+          <br />
+          S2 = Sisi B
+          <br />
+          S3 = Sisi C
+        </p>
+
+        <h3>Hitung Keliling Segitiga</h3>
+        <input type="number" id="sisi1" placeholder="Sisi 1" />
+        <input type="number" id="sisi2" placeholder="Sisi 2" />
+        <input type="number" id="sisi3" placeholder="Sisi 3" />
+        <div id="kelilingHasil"></div>
+        <button onclick="hitungKeliling()">Hitung</button>
+        <button onclick="resetKeliling()">Reset</button>
+      </section>
+    </div>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
