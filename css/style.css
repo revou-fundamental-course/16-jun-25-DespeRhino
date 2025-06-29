@@ -1,8 +1,6 @@
 /* style.css */
 body {
-  font-family: Arial, sans-serif;
   background: white;
-  margin: 0;
   padding: 20px;
 }
 
@@ -11,12 +9,11 @@ body {
 }
 
 .container {
-  max-width: 600px;
-  margin: auto;
+  max-width: 720px;
   background: black;
-  padding: 20px;
   border-radius: 10px;
-  box-shadow: 0 2px 8px grey;
+  margin: auto;
+  padding: 20px;
 }
 
 h1,
@@ -40,7 +37,7 @@ button {
   background-color: blue;
   color: white;
   border: none;
-  border-radius: 5px;
+  border-radius: 100px;
   cursor: pointer;
 }
 
@@ -59,6 +56,7 @@ input {
 
 #luasHasil,
 #kelilingHasil {
+  display: block;
   margin-top: 10px;
   padding: 10px;
   background: white;

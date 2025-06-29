@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -15,16 +15,10 @@
         Sebuah web app sederhana yang berfungsi untuk menghitung nilai luas dan
         keliling Segitiga
       </p>
-      <button
-        class="btnLuas"
-        onclick="document.getElementById('luas').scrollIntoView()"
-      >
+      <button onclick="document.getElementById('luas').scrollIntoView()">
         Luas Segitiga
       </button>
-      <button
-        class="btnKeliling"
-        onclick="document.getElementById('keliling').scrollIntoView()"
-      >
+      <button onclick="document.getElementById('keliling').scrollIntoView()">
         Keliling Segitiga
       </button>
 
@@ -32,8 +26,20 @@
       <section id="luas">
         <h2>Luas Segitiga</h2>
         <img src="Luas Segitiga.jpg" alt="Triangle Diagram" />
-        <p>Rumus Luas Segitiga yaitu:<br /><strong>L = 1/2 x a x t</strong></p>
-        <p>Di mana:<br />L = Luas<br />a = Panjang Alas<br />t = Tinggi</p>
+        <p>
+          Rumus Luas Segitiga yaitu:
+          <br />
+          <strong>L = 1/2 x a x t</strong>
+        </p>
+        <p>
+          Di mana:
+          <br />
+          L = Luas
+          <br />
+          a = Panjang Alas
+          <br />
+          t = Tinggi
+        </p>
 
         <h2>Hitung Luas Segitiga</h2>
         <input type="number" id="alas" placeholder="Nilai Alas" />
